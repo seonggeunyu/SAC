@@ -1,3 +1,31 @@
+var getScriptPromisify = (src) => {
+	return new Promise((resolve) =>{
+	$.getScript(src, resolve)
+	})
+}
+
+var parseMetadata = metadata => {
+
+	const { dimensions : dimensionMap, mainStructureMembers : measureMap} = metadata
+	const dimensions = []
+	for (const key in dimensionMap)
+	{
+		const dimension = dimensionMap[key]
+		dimensions.push({key ... dimension})
+	}
+
+	const measures = []
+
+	for (const key in measureMap)
+	{
+		const measure = measureMap[key]
+		measures.push({key ... measure})
+	}
+
+	return {dimensions, measures, dimensionMap, measureMap}
+	
+}
+
 (function () {
 const template = document.createElement('template')
 template.innerHTML = `
@@ -25,34 +53,6 @@ onCustomWidgetAfterUpdate(changedProps){
 
 onCustomWidgetDestroy(){
 		//
-}
-
-var getScriptPromisify = (src) => {
-	return new Promise((resolve) =>{
-	$.getScript(src, resolve)
-	})
-}
-
-var parseMetadata = metadata => {
-
-	const { dimensions : dimensionMap, mainStructureMembers : measureMap} = metadata
-	const dimensions = []
-	for (const key in dimensionMap)
-	{
-		const dimension = dimensionMap[key]
-		dimensions.push({key ... dimension})
-	}
-
-	const measures = []
-
-	for (const key in measureMap)
-	{
-		const measure = measureMap[key]
-		measures.push({key ... measure})
-	}
-
-	return {dimensions, measures, dimensionMap, measureMap}
-	
 }
 	
 async render(){
