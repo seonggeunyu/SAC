@@ -27,7 +27,7 @@ onCustomWidgetResize (width, height){
 	}
 
 	render(){
-		this._root.textContent = 'Hello Custon Widget Client Width :${this.clientWidth} , clientHeight : ${this.clientHeight}'
+		this._root.textContent = 'Hello Custom Widget clientWidth: ${this.clientWidth}, clientHeight: ${this.clientHeight}'
 	}
 }
 customElements.define('com-sap-sac-exercise-ysg001-main', Main)
