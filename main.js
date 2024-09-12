@@ -11,7 +11,7 @@ var parseMetadata = metadata => {
 	for (const key in dimensionMap)
 	{
 		const dimension = dimensionMap[key]
-		dimensions.push({key ... dimension})
+		dimensions.push({key ...dimension})
 	}
 
 	const measures = []
@@ -19,7 +19,7 @@ var parseMetadata = metadata => {
 	for (const key in measureMap)
 	{
 		const measure = measureMap[key]
-		measures.push({key ... measure})
+		measures.push({key ...measure})
 	}
 
 	return {dimensions, measures, dimensionMap, measureMap}
