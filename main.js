@@ -4,7 +4,7 @@ template.innerHTML = `
 <style>
 </style>
 <div id="root" style="width: 100%; height: 100%;">
-Hello WebComponent
+Hello Web Component
 </div>
 `
 class Main extends HTMLElement {
@@ -15,20 +15,20 @@ this._shadowRoot.appendChild(template.content.cloneNode(true))
 this._root = this._shadowRoot.getElementById('root')
 }
 onCustomWidgetResize (width, height){
-		this.render();
-	}
+	this.render();
+}
 
-	onCustomWidgetAfterUpdate(changedProps){
+onCustomWidgetAfterUpdate(changedProps){
 		//
-	}
+}
 
-	onCustomWidgetDestroy(){
+onCustomWidgetDestroy(){
 		//
-	}
+}
 
-	render(){
-		this._root.textContent = "Hello Custon Widget Client Width :"+${this.clientWidth}+" , clientHeight :"+ ${this.clientHeight};
-	}
+render(){
+	this._root.textContent = 'Hello Custom Widget clientWidth: ${this.clientWidth}, clientHeight: ${this.clientHeight}'
+}
 }
 customElements.define('com-sap-sac-exercise-ysg001-main', Main)
 })()
