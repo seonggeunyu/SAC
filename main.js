@@ -99,7 +99,7 @@ async render(){
 		tooltips: {trigger:'axis'},
 		series
 	}
-	eChart,setOption(option)
+	eChart.setOption(option)
 			
 	//this._root.textContent = JSON.stringify(dataBinding)
 	
