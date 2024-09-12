@@ -101,8 +101,7 @@ async render(){
 	}
 	eChart,setOption(option)
 			
-	
-	//this._root.textContent = JSON.stringify(dataBinding)
+	this._root.textContent = JSON.stringify(dataBinding)
 	
 	//this._root.textContent = `Hello Custom Widget clientWidth: ${this.clientWidth}, clientHeight: ${this.clientHeight}`
 }
