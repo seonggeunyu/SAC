@@ -73,7 +73,7 @@ async render(){
 
 	const series = measures.map(measure => {
 		return {
-			id: member.id,
+			id: measure.id,
 			name: measure.label,
 			data: [],
 			key: measure.key,
